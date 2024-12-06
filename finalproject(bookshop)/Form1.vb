@@ -24,16 +24,16 @@ Public Class Form1
             cmd.Parameters.AddWithValue("@2", OleDbType.VarChar).Value = txtPassword.Text
             Dim count = Convert.ToInt32(cmd.ExecuteScalar())
 
-            Dim usermain As New Users
-            Users.usermain = txtUname.Text
-            Users.Show()
+
 
             If (count > 0) Then
-                'MsgBox("Login Successfully!", MsgBoxStyle.Information)
+                MsgBox("Login Successfully!", MsgBoxStyle.Information)
             Else
                 MsgBox("Acount not found, check the credential!", MsgBoxStyle.Critical)
 
             End If
+            Dim mainshop As New MainBookshop
+            MainBookshop.Show()
         End If
     End Sub
 End Class

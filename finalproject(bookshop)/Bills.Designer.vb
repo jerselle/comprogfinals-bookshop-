@@ -80,7 +80,7 @@ Partial Class Bills
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(583, 459)
+        Me.Button3.Location = New System.Drawing.Point(597, 439)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(111, 28)
         Me.Button3.TabIndex = 28
@@ -91,7 +91,7 @@ Partial Class Bills
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(611, 424)
+        Me.Label9.Location = New System.Drawing.Point(625, 399)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(52, 21)
         Me.Label9.TabIndex = 27
@@ -105,7 +105,7 @@ Partial Class Bills
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 51
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(342, 286)
+        Me.DataGridView2.Size = New System.Drawing.Size(342, 229)
         Me.DataGridView2.TabIndex = 26
         '
         'DataGridView1
@@ -116,7 +116,7 @@ Partial Class Bills
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(438, 205)
+        Me.DataGridView1.Size = New System.Drawing.Size(459, 205)
         Me.DataGridView1.TabIndex = 25
         '
         'Button1

@@ -22,11 +22,9 @@ Partial Class Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -41,24 +39,27 @@ Partial Class Dashboard
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.btnDDashboard = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.btnDBookshop = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.btnDLogout = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel14.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel13.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Label9)
         Me.Panel3.Controls.Add(Me.Label8)
-        Me.Panel3.Controls.Add(Me.Panel11)
-        Me.Panel3.Controls.Add(Me.Panel12)
         Me.Panel3.Controls.Add(Me.Panel9)
         Me.Panel3.Controls.Add(Me.Panel10)
         Me.Panel3.Controls.Add(Me.Label7)
@@ -71,49 +72,21 @@ Partial Class Dashboard
         Me.Panel3.Size = New System.Drawing.Size(807, 544)
         Me.Panel3.TabIndex = 9
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(390, 380)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(88, 23)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "Amount"
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(568, 139)
+        Me.Label8.Location = New System.Drawing.Point(570, 218)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(58, 23)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Users"
         '
-        'Panel11
-        '
-        Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel11.Location = New System.Drawing.Point(390, 406)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(194, 10)
-        Me.Panel11.TabIndex = 6
-        '
-        'Panel12
-        '
-        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel12.Location = New System.Drawing.Point(294, 365)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(90, 143)
-        Me.Panel12.TabIndex = 5
-        '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel9.Location = New System.Drawing.Point(568, 165)
+        Me.Panel9.Location = New System.Drawing.Point(572, 246)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(194, 10)
         Me.Panel9.TabIndex = 6
@@ -122,7 +95,7 @@ Partial Class Dashboard
         '
         Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel10.Location = New System.Drawing.Point(472, 124)
+        Me.Panel10.Location = New System.Drawing.Point(474, 200)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(90, 143)
         Me.Panel10.TabIndex = 5
@@ -131,7 +104,7 @@ Partial Class Dashboard
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(148, 139)
+        Me.Label7.Location = New System.Drawing.Point(170, 218)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(65, 23)
         Me.Label7.TabIndex = 4
@@ -141,7 +114,7 @@ Partial Class Dashboard
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel8.Location = New System.Drawing.Point(148, 165)
+        Me.Panel8.Location = New System.Drawing.Point(170, 246)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(194, 10)
         Me.Panel8.TabIndex = 3
@@ -150,7 +123,7 @@ Partial Class Dashboard
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Location = New System.Drawing.Point(52, 124)
+        Me.Panel2.Location = New System.Drawing.Point(74, 200)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(90, 143)
         Me.Panel2.TabIndex = 2
@@ -160,7 +133,7 @@ Partial Class Dashboard
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(202, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(346, 61)
+        Me.Label6.Location = New System.Drawing.Point(353, 82)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(104, 21)
         Me.Label6.TabIndex = 1
@@ -170,7 +143,7 @@ Partial Class Dashboard
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(320, 22)
+        Me.Label5.Location = New System.Drawing.Point(313, 46)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(170, 21)
         Me.Label5.TabIndex = 0
@@ -256,42 +229,74 @@ Partial Class Dashboard
         Me.btnDDashboard.Text = "Dashboard"
         Me.btnDDashboard.UseVisualStyleBackColor = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(53, 22)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 21)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "BookShop"
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Panel14)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Panel13)
         Me.Panel1.Controls.Add(Me.Panel7)
         Me.Panel1.Controls.Add(Me.Panel5)
         Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Location = New System.Drawing.Point(6, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(205, 568)
         Me.Panel1.TabIndex = 8
         '
-        'Button4
+        'Panel14
         '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(30, 501)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(115, 31)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Logout"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel14.Controls.Add(Me.btnDBookshop)
+        Me.Panel14.Location = New System.Drawing.Point(33, 94)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(131, 42)
+        Me.Panel14.TabIndex = 24
+        '
+        'btnDBookshop
+        '
+        Me.btnDBookshop.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.btnDBookshop.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDBookshop.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDBookshop.ForeColor = System.Drawing.Color.White
+        Me.btnDBookshop.Location = New System.Drawing.Point(-2, -3)
+        Me.btnDBookshop.Name = "btnDBookshop"
+        Me.btnDBookshop.Size = New System.Drawing.Size(132, 46)
+        Me.btnDBookshop.TabIndex = 1
+        Me.btnDBookshop.Text = "BookShop"
+        Me.btnDBookshop.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(33, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(131, 87)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel13
+        '
+        Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel13.Controls.Add(Me.btnDLogout)
+        Me.Panel13.Location = New System.Drawing.Point(2, 505)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(193, 39)
+        Me.Panel13.TabIndex = 9
+        '
+        'btnDLogout
+        '
+        Me.btnDLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.btnDLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDLogout.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDLogout.ForeColor = System.Drawing.Color.White
+        Me.btnDLogout.Location = New System.Drawing.Point(28, -1)
+        Me.btnDLogout.Name = "btnDLogout"
+        Me.btnDLogout.Size = New System.Drawing.Size(133, 39)
+        Me.btnDLogout.TabIndex = 9
+        Me.btnDLogout.Text = "Log out"
+        Me.btnDLogout.UseVisualStyleBackColor = False
         '
         'Dashboard
         '
@@ -312,16 +317,15 @@ Partial Class Dashboard
         Me.Panel5.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.Panel14.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel13.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Panel11 As Panel
-    Friend WithEvents Panel12 As Panel
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label7 As Label
@@ -332,11 +336,14 @@ Partial Class Dashboard
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button4 As Button
     Friend WithEvents btnDBooks As Button
     Friend WithEvents btnDUsers As Button
     Friend WithEvents btnDDashboard As Button
     Friend WithEvents Panel6 As Panel
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents btnDLogout As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents btnDBookshop As Button
 End Class

@@ -18,3 +18,5 @@ C:\Users\63916\OneDrive\Desktop\finalproject(bookshop)\bin\Debug\dbase.mdb
 C:\Users\63916\OneDrive\Desktop\finalproject(bookshop)\bin\Debug\System.Data.OleDb.dll
 C:\Users\63916\OneDrive\Desktop\finalproject(bookshop)\bin\Debug\System.Data.OleDb.xml
 C:\Users\63916\OneDrive\Desktop\finalproject(bookshop)\obj\Debug\finalpro.D2B99C1E.Up2Date
+C:\Users\63916\OneDrive\Desktop\finalproject(bookshop)\obj\Debug\finalproject_bookshop_.Bookshop.resources
+C:\Users\63916\OneDrive\Desktop\finalproject(bookshop)\obj\Debug\finalproject_bookshop_.MainBookshop.resources

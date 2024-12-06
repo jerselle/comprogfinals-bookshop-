@@ -25,13 +25,13 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.txtUname = New System.Windows.Forms.TextBox()
-        Me.btnLogin = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.txtUname = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,9 +40,9 @@ Partial Class Form1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(126, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Location = New System.Drawing.Point(124, 117)
+        Me.Panel1.Location = New System.Drawing.Point(116, 117)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(831, 409)
+        Me.Panel1.Size = New System.Drawing.Size(839, 409)
         Me.Panel1.TabIndex = 0
         '
         'Panel2
@@ -60,24 +60,43 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(851, 422)
         Me.Panel2.TabIndex = 1
         '
-        'PictureBox1
+        'Label3
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, -16)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(433, 438)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Schoolbook", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(556, 62)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(165, 27)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "BOOK SHOP"
         '
-        'txtUname
+        'txtPassword
         '
-        Me.txtUname.Location = New System.Drawing.Point(509, 149)
-        Me.txtUname.Multiline = True
-        Me.txtUname.Name = "txtUname"
-        Me.txtUname.Size = New System.Drawing.Size(275, 30)
-        Me.txtUname.TabIndex = 1
+        Me.txtPassword.Location = New System.Drawing.Point(509, 218)
+        Me.txtPassword.Multiline = True
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(275, 29)
+        Me.txtPassword.TabIndex = 5
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(508, 197)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(75, 18)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Password"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(506, 128)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(77, 18)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Username"
         '
         'btnLogin
         '
@@ -92,43 +111,24 @@ Partial Class Form1
         Me.btnLogin.Text = "Log In"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
-        'Label1
+        'txtUname
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(506, 128)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(77, 18)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Username"
+        Me.txtUname.Location = New System.Drawing.Point(509, 149)
+        Me.txtUname.Multiline = True
+        Me.txtUname.Name = "txtUname"
+        Me.txtUname.Size = New System.Drawing.Size(275, 30)
+        Me.txtUname.TabIndex = 1
         '
-        'Label2
+        'PictureBox1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(508, 197)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 18)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Password"
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Location = New System.Drawing.Point(509, 218)
-        Me.txtPassword.Multiline = True
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(275, 29)
-        Me.txtPassword.TabIndex = 5
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Schoolbook", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(556, 62)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(165, 27)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "BOOK SHOP"
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, -16)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(433, 438)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
